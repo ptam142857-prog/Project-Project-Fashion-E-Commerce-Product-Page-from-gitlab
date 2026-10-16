@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion E-commerce Product Page</title>
+    <style>
+      body {
+        font-size: 14px;
+      }
+
+      #flex-container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+
+      .left-content,
+      .right-content {
+        flex: 50%;
+      }
+
+      .left-content {
+        display: flex;
+        gap: 5px;
+      }
+
+      .image {
+        flex: 1;
+      }
+
+      .right-content {
+        text-align: right;
+      }
+
+      .action {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .action a {
+        color: #666666;
+        text-decoration: none;
+      }
+
+      .product-name {
+        font-size: 32px;
+        font-weight: 300;
+        margin-top: 150px;
+      }
+
+      .product-price {
+        font-size: 22px;
+        margin-top: -15px;
+      }
+
+      .product-color {
+        color: #828282;
+        margin-top: 30px;
+      }
+
+      .product-description {
+        color: #888888;
+        line-height: 18px;
+        margin-top: 40px;
+      }
+
+      .size-selector {
+        margin-top: 40px;
+      }
+
+      .btn-size {
+        width: 42px;
+        height: 42px;
+        padding: 12px;
+        margin: 3px;
+        border: 1px solid black;
+        background-color: white;
+      }
+
+      .size-guide {
+        display: block;
+        color: #888888;
+      }
+
+      .add-to-bag-btn {
+        display: block;
+        font-size: 18px;
+        padding: 22px 115px;
+        margin-left: auto;
+        margin-top: 30px;
+        color: white;
+        font-weight: 200;
+        background-color: black;
+      }
+
+      .product-action {
+        margin-top: 30px;
+        color: #888888;
+      }
+
+      .product-action a:nth-child(1) {
+        display: block;
+        line-height: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flex-container">
+      <div class="left-content">
+        <div class="image">
+          <img src="images/image1.png" alt="" />
+        </div>
+        <div class="image">
+          <img src="images/image2.png" alt="" />
+          <img src="images/image3.png" alt="" />
+          <img src="images/image4.png" alt="" />
+          <img src="images/image5.png" alt="" />
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="action">
+          <a href="!#">BEGIN SESSION</a>
+          <img src="images/Card.png" alt="card" />
+        </div>
+
+        <h1 class="product-name">TRACK BUTTONS</h1>
+
+        <div class="product-price">$199.99</div>
+
+        <div class="product-color">IVORY WHITE | 7272/337</div>
+
+        <p class="product-description">
+          We work with our suppliers workers, unions and <br />
+          international bodies to develop a supply chain where human <br />
+          rights are promoted and respected, contributing to the <br />
+          United Nations Sutainable Development Goals.
+        </p>
+
+        <div class="size-selector">
+          <button class="btn-size">EP</button>
+          <button class="btn-size">P</button>
+          <button class="btn-size">M</button>
+          <button class="btn-size">G</button>
+          <button class="btn-size">EG</button>
+        </div>
+
+        <a href="!#" class="size-guide">SIZE GUIDE</a>
+
+        <button class="add-to-bag-btn">ADD TO BAG</button>
+
+        <div class="product-action">
+          <a class="favorite-link">ADD TO FAVORITES</a>
+          <a class="shipping-link"> CALCULATE SHIPPING AND DELIVERY </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
